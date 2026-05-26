@@ -1,0 +1,6 @@
+cli apps terminal
+
+editor: vim / neovim
+emulator: kitty / ghostly
+finder: fuzzy finder
+manager: yazi
