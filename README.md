@@ -6,7 +6,7 @@ wrapper module
 
 secret manager
 
-impermanence
+impermanence / preservation
 
 help: https://github.com/nix-community/awesome-nix 
 
