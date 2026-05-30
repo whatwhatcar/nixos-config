@@ -1,4 +1,12 @@
-to add: https://github.com/hercules-ci/flake-parts 
+flake-parts: https://github.com/hercules-ci/flake-parts 
+
+import tree
+
+wrapper module
+
+secret manager
+
+impermanence
 
 help: https://github.com/nix-community/awesome-nix 
 
