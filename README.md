@@ -19,3 +19,5 @@ rice: https://quickshell.org/
 nixos-rebuild switch --flake .#username
 
 home-manager switch --flake .#username
+
+example: https://nixos-and-flakes.thiscute.world/
