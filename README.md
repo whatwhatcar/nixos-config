@@ -14,7 +14,7 @@ help: https://github.com/nix-community/awesome-nix
 
 rice: https://quickshell.org/
 
-commands:
+/etc/nixos | ~/.config/nixos
 
 nixos-rebuild switch --flake .#username
 
