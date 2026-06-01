@@ -13,3 +13,7 @@ impermanence: https://github.com/nix-community/impermanence
 help: https://github.com/nix-community/awesome-nix 
 
 rice: https://quickshell.org/
+
+commands:
+nixos-rebuild switch --flake .#username
+home-manager switch --flake .#username
