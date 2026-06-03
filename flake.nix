@@ -1,12 +1,15 @@
 {
-description  = "flake";
-
-  inputs = { 
-  nixpkgs.url = "gitub:nixos/nixpkgs?ref=nixos-unstable";
-    home-manager = {
-      url = "github:nix-community/home-manager";
-      inputs.nixpkgs.follows = "nixpkgs";
+  inputs = {
+    nixpkgs = {
+      url = "github:nixpkgs/nixos-unstable";
     };
+    flake-parts = {
+      url = "github:hercules-ci/flake-parts";
+    };
+     import-tree = {
+       url = "github:denful/import-tree";
+     };
   };
-  outputs = inputs @ { nixpkgs, ... }:
+  outputs = inputs: inputs.flake-parts.lib.mkFlake { inherit inputs; }
+   (inputs.import-tree ./modules);
 }
