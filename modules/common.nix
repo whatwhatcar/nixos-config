@@ -8,7 +8,7 @@ flake.nixosModules.common = { pkgs, inputs, ... }: {
       isNormalUser = true;
       extraGroups = [
         "wheel"
-        "network-manager"
+        "networkmanager"
       ];
     };
   };
