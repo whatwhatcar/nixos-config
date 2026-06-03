@@ -27,4 +27,4 @@ flake.nixosModules.common = { pkgs, inputs, ... }: {
      what = import ./home/home.nix
     };
   };
-};
+}
