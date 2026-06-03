@@ -20,4 +20,4 @@ nixos-rebuild switch --flake .#username
 
 home-manager switch --flake .#username
 
-example: https://nixos-and-flakes.thiscute.world/
+example: https://github.com/ryan4yin/nix-config
