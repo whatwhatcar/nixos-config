@@ -17,6 +17,8 @@
       inputs.home-manager.nixosModules.home-manager
 
       self.nixosModules.common
+      self.nixosModules.user_what
+      
     ];
 
     networking = {
