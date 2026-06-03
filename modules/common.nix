@@ -1,18 +1,12 @@
 {
  flake.nixosModules.common = { pkgs, inputs, ... }: {
 
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nixpkgs.config.allowUnfree = true;
+  nix.settings.experimental-features = [ 
+   "nix-command" 
+   "flakes" 
+  ];
 
-  users.users = {
-    what = {
-      isNormalUser = true;
-      extraGroups = [
-        "wheel"
-        "networkmanager"
-      ];
-    };
-  };
 
   environment.systemPackages = with pkgs; [
     vim
@@ -23,9 +17,6 @@
   home-manager = {
     useGlobalPkgs = true;
     useUserPackages = true;
-
-    users = {
-     what = import ./home/home.nix
-    };
   };
+ };
 }
