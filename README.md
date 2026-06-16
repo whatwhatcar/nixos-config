@@ -21,6 +21,10 @@ nixos-rebuild switch --flake .#username
 home-manager switch --flake .#username
 
 example:
-    https://github.com/ryan4yin/nix-config
-    https://github.com/Swarsel/.dotfiles
+https://github.com/ryan4yin/nix-config
+https://github.com/Swarsel/.dotfiles
 
+outputs = inputs: import ./outputs inputs;
+
+outputs = inputs: inputs.flake-parts.lib.mkFlake { inherit inputs; }
+    (inputs.import-tree ./modules);
