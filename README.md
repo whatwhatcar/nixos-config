@@ -28,3 +28,9 @@ outputs = inputs: import ./outputs inputs;
 
 outputs = inputs: inputs.flake-parts.lib.mkFlake { inherit inputs; }
     (inputs.import-tree ./modules);
+
+flake.nixosConfigurations.my-machine = inputs.nixpkgs.lib.nixosSystem {
+    modules = [
+      ./configuration.nix
+    ];
+};
