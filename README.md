@@ -34,3 +34,5 @@ flake.nixosConfigurations.my-machine = inputs.nixpkgs.lib.nixosSystem {
       ./configuration.nix
     ];
 };
+
+put {} around it and special args
